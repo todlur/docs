@@ -62,7 +62,7 @@ with orthogonal grammar (in C, you don't write `for(a b c)`), may not be too
 bad. User-level macros, operator overloading, even excessive use of higher-order
 programming, can all lead quickly to the tragedy of write-only code.
 
-Hoon has very weak FLC in keyword style, none in rune style. It has no
+Hoon has no FLC. It has no
 user-level macros or overloading. It does support higher-order programming;
 write-only Hoon can certainly be (and has been) written. But good Hoon style is
 to avoid it.
@@ -130,25 +130,14 @@ irregular forms are flat.
 
 Some twigs (simple leafy ones) have *only* irregular forms.
 
-## Keywords versus runes
+## Runes
 
-A regular form starts with a *sigil*, which is either a *keyword* or a *rune* --
-at the programmer's choice.
-
-A *keyword* is `:` and then the stem label - e.g., `:cons`.
-
-A *rune* is a pair of ASCII punctuation marks (a digraph) - e.g., `:-`. The
+A regular form starts with a *rune*. A rune is a pair of ASCII punctuation marks (a digraph) - e.g., `:-`. The
 first glyph in the rune indicates the category - e.g., `:` runes make cells.
-Runes can be pronounced by their glyphs or by their stem -- for `:-`, you can
-say either "colhep" or "cons".
+Runes are pronounced by their glyphs -- for `:-`, you 
+say "colhep".
 
-Keywords may be less challenging for early learners. Rune style is less
-cluttered and distracting for experienced programmers; the system codebase is
-all in rune style. Beginners can start with keywords and move to runes; start
-with runes and stick with runes; or start with keywords and stick with keywords.
-
-Here's the FizzBuzz demo code, in idiomatic rune syntax. Compare with the
-[original](../demo).
+Here's the FizzBuzz demo code:
 
       |=  end/atom
       =/  count  1
@@ -165,7 +154,7 @@ Here's the FizzBuzz demo code, in idiomatic rune syntax. Compare with the
 
 ## Tall regular form
 
-Tall regular form starts with the sigil, followed by a `gap` (any whitespace
+Tall regular form starts with the rune, followed by a `gap` (any whitespace
 except `ace`), followed by a bulb whose twigs are separated by `gap`.
 
 There are four body subtypes: *fixed*, *running*, *jogging*, and *battery*.
@@ -196,7 +185,7 @@ conventions:
 
 Bulbs with *fixed* fanout use "backstep" indentation, which slopes backward and
 to the right by two spaces per line. The first child is two spaces after the end
-of the sigil.
+of the rune.
 
 Some *1-fixed*, *2-fixed*, *3-fixed* and *4-fixed* examples:
 
@@ -221,7 +210,7 @@ keeping code flow vertical rather than diagonal.
 ### Conventions: *running*
 
 A *running* bulb (a simple child list) puts the first child two spaces after the
-end of the sigil, and the following children straight down:
+end of the rune, and the following children straight down:
 
 A *running* example:
 
@@ -277,20 +266,18 @@ conventional example:
 
 ## Flat regular form
 
-Flat regular form starts with the sigil, followed by `pal` (`(`, left
+Flat regular form starts with the rune, followed by `pal` (`(`, left
 parenthesis), followed by a bulb whose subexpressions are separated by `ace`
 (one space), followed by `par` (`)`, right parenthesis).
 
-A twig in flat form, `:if`, `?:`, `{$if p/twig q/twig r/twig}`:
-
-    :if(p q r)
+A twig in flat form, `?:`, `{$wtcl p/twig q/twig r/twig}`:
 
     ?:(p q r)
 
 The only exception is *jogging* bodies, in which subexpression pairs are
 separated by commas:
 
-    :make(foo bar 42, baz 55, moo 17)
+    %=(foo bar 42, baz 55, moo 17)
 
 There is no flat regular form for *battery* bodies. Be tall.
 
