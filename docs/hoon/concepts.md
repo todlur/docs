@@ -108,10 +108,9 @@ As the noun that the parser produces, a twig is a tagged union of the form
 
 As text, each twig has both regular and irregular syntax forms. Regular syntax
 can be either *tall* or *flat*: multiline or single-line. Irregular syntax is
-always flat. Tall twigs can contain flat twigs, but not vice versa.
+always flat. Tall twigs can contain flat twigs, but not vice versa. 
 
-Regular forms always start with a *sigil*, which is either a *keyword* or a
-*rune* at the programmer's choice. A keyword is the stem cord.
+Regular forms always start with a *rune*. A rune is a pair of ASCII punctuation marks (a digraph) - e.g., `|=`.
 
 For most stems, tall regular form has no delimiter or terminator, eliminating
 the `)))))` problem common in functional languages. Hoon also uses an unusual
@@ -121,15 +120,15 @@ Hoon is mildly whitespace-sensitive. It knows the difference between no
 whitespace, one-space, and more-space. But all cases of more-space mean the same
 thing. Flat syntax uses one-space, tall syntax more-space.
 
-As an example, the regular flat keyword syntax `:call(a b)` means the same thing
-as the flat rune syntax `%-(a b)`, the tall keyword syntax
-
-    :call  a
-    b
-
-or the tall rune syntax (here on one line, with double spaces):
+As an example, the flat rune syntax `%-(a b)` means the same thing
+as the tall rune syntax (here on one line, with double spaces):
 
     %-  a  b
+
+(or here on two lines, with double spaces and a line break):
+
+    %-  a
+    b
 
 ### <a name="span">`span`</a> (type, as range)
 
@@ -173,12 +172,12 @@ In a conventional language, we have a scope, environment or symbol table.
 Declaring a variable, like `var foo: atom`, adds the name `foo` to the table
 with type `atom`.
 
-The Hoon equivalent is `:var  foo  atom`. But Hoon has a homoiconic heap; there
+The Hoon equivalent is `=|  foo/atom`. But Hoon has a homoiconic heap; there
 is no inscrutable scope or environment. There is just the subject, which is one
 noun. To "declare a variable" is to make a cell `[variable old-subject]`, and
 use it as the subject of the [`twig`](#twig) below.
 
-So the labe[`twig`](#twig)l `foo` isn't a key in a symbol table; it's in the
+So the label `foo` isn't a key in a symbol table; it's in the
 type ([`span`](#span)) of the new value. It's not a variable named `foo`, whose
 value is of type `atom`; it's a subtree of type `foo:atom`.
 
