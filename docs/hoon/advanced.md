@@ -68,7 +68,7 @@ variance; wet polymorphism relies on genericity.
 ### Dry arms
 
 For a dry arm, we apply the Liskov substitution principle: we ask, "can we use
-any `p` as if it was a `q.q`?" This is the same test as in `:cast` or any type
+any `p` as if it was a `q.q`?" This is the same test as in `^-` or any type
 comparison (`nest`). Intuitively, we ask: "is the new payload compatible with
 the old payload?"
 
