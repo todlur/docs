@@ -6,4 +6,6 @@ title: Activity
 
 # Activity
 
+Find out here what's going on in the Urbit community. Updated weekly.
+
 <list/>

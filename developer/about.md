@@ -6,4 +6,6 @@ title: About
 
 # About
 
+Learn more about the Urbit project here before delving deeper into the developer documentation.
+
 <list/>
