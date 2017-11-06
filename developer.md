@@ -18,19 +18,19 @@ sort: 4
     <h3>This Week in Urbit</h3>
     <ul class="list">
       <li>
-        <h1><a href="https://urbit.org/fora/posts/~2017.10.14..00.00.00..0000~/">Week of ~2017.10.13</a></h1>
+        <h1><a href="https://urbit.org/fora/posts/~2017.10.14..00.00.00..0000~/">Week of <code>~2017.10.13</code></a></h1>
         <p>
         <code>~palfun-foslup</code><b> </b>talks about Talk. A cool Ford patch. A conversation on doors.
         </p>
       </li>
       <li>
-        <h1><a href="https://urbit.org/fora/posts/~2017.10.7..00.00.00..0000~/">Week of ~2017.10.6</a></h1>
+        <h1><a href="https://urbit.org/fora/posts/~2017.10.7..00.00.00..0000~/">Week of <code>~2017.10.6</code></a></h1>
         <p>
         <code>~master-morzod</code><b> </b>talks about Arvo. The core team discusses how to best teach Urbit. A conversation on Hoon casting and Nock macro expansions.
         </p>
       </li>
       <li>
-        <h1><a href="activity/week">More</a></h1>
+        <a href="activity/week" class="more">More</a>
       </li>
     </ul>
   </div>
@@ -63,13 +63,13 @@ sort: 4
       <li>
         <h1><a href="https://urbit.org/stream">Talk</a></h1>
         <p>
-        Urbit-based chat
+        Urbit-hosted chat
         </p>
       </li>
       <li>
         <h1><a href="http://urbit.org/fora">Fora</a></h1>
         <p>
-        Urbit-based discussion forum
+        Urbit-hosted discussion forum
         </p>
       </li>
       <li>
@@ -92,9 +92,9 @@ sort: 4
         <ul class="list">
             <li>
               <h1><a href="https://www.youtube.com/watch?v=YmE4Rm3jX0w">Mars Talks, Ep. 4</a></h1>
-              <p>
-              <b>Video </b>
-              <code>~2017.10.18</code>
+              <p class="label">
+                <span class="type">Video</span>
+                <code>~2017.10.18</code>
               </p>
               <p>
               <code>~tonlur-sarret</code><b> </b>and <code>~rovnys-ricfer</code><b> </b>talk about organizing the Urbit developer community, new ideas for the Urbit docs and some big projects on the horizon.
@@ -102,9 +102,9 @@ sort: 4
             </li>
             <li>
               <h1><a href="https://epicenter.tv/episode/205/">Epicenter: Episode 205</a></h1>
-              <p>
-              <b>Podcast </b>
-              <code>~2017.10.18</code>
+              <p class="label">
+                <span class="type">Podcast</span>
+                <code>~2017.10.18</code>
               </p>
               <p>
               Galen talks with Brian Fabian Crain and Meher Roy of the <i>Epicenter</i><b> </b>podcast about what a radically different internet could look like and Urbit's path to getting there.
@@ -112,8 +112,8 @@ sort: 4
             </li>
            <li>
              <h1><a href="http://podcast.hajak.se/104117/548011-e09-galen-wolfe-pauly-urbit-a-user-owned-internet-on-top-of-the-internet">Governing the Future: E09</a></h1>
-             <p>
-             <b>Podcast </b>
+             <p class="label">
+               <span class="type">Podcast</span>
              </p>
              <p>
              Galen talks with Hampus Jakobsson of the <i>Governing the Future</i><b> </b>podcast about the Urbit user experience.
@@ -121,15 +121,15 @@ sort: 4
            </li>
             <li>
               <h1><a href="https://www.youtube.com/watch?v=bTisf4oxIFo">Urbit at LambdaConf</a></h1>
-              <p>
-              <b>Talk </b>
+              <p class="label">
+                <span class="type">Talk</span>
               </p>
               <p>
               Curtis gives a technical talk, <i>Urbit: A Clean Slate Functional Operating Stack</i><b> </b>at the LambdaConf functional programming conference.
               </p>
             </li>
             <li>
-              <h1><a href="activity/community/#-media">More</a></h1>
+              <a href="activity/community/#-media" class="more">More</a>
             </li>
         </ul>
     </div>
@@ -138,37 +138,37 @@ sort: 4
         <ul class="list">
             <li>
               <h1><a href="https://github.com/eglaysher/arvo/blob/new-stdlib/lib/new-hoon.hoon">Thoughts for New Libraries</a></h1>
-              <p>
+              <p class="label">
               <code>~2017.10.17</code>
               </p>
               <p>
               <code>~littel-ponnys</code><b> </b>has been working on porting analogues of Haskell's data structures to the Hoon standard library and moving <code>hoon.hoon</code><b> </b>away from exclusively four-letter identifier names.
+              <br />
+              <a href="https://urbit.org/fora/posts/~2017.10.17..04.09.16..7eb8~">Fora post</a>
               </p>
-              <h1><a href="https://urbit.org/fora/posts/~2017.10.17..04.09.16..7eb8~">Fora post</a>
-              </h1>
             </li>
             <li>
               <h1><a href="https://github.com/asssaf/urbit-package">A Simple Urbit Package Manager</a></h1>
-              <p>
-              <code>~2017.10.12</code>
+              <p class="label">
+                <code>~2017.10.12</code>
               </p>
               <p>
               <code>~rophex-hashes</code><b> </b>built a simple package manager to automate app installation over the Urbit peer-to-peer network.
+              <br />
+              <a href="https://urbit.org/fora/posts/~2017.9.20..22.45.02..0f8d~">Fora post</a>
               </p>
-              <h1><a href="https://urbit.org/fora/posts/~2017.9.20..22.45.02..0f8d~">Fora post</a>
-              </h1>
             </li>
             <li>
               <h1><a href="https://github.com/frodwith/jaque">Vere on the JVM via Graal and Truffle</a></h1>
-              <p>
-              <code>~2017.10.10</code>
+              <p class="label">
+                <code>~2017.10.10</code>
               </p>
               <p>
               <code>~fodwyt-nimbus</code><b> </b>has been reimplementing Vere using the Truffle language-implementation framework for the Graal JVM compiler. It's currently roughly 15x faster than current Vere.
               </p>
             </li>
             <li>
-              <h1><a href="activity/community/#-projects">More</a></h1>
+              <a href="activity/community/#-projects" class="more">More</a>
             </li>
         </ul>
     </div>
@@ -176,14 +176,13 @@ sort: 4
         <h3>Community docs</h3>
         <ul class="list">
             <li>
-              <code>~master-morzod</code>
-              <br />
               <h1><a href="https://mardev.urbit.org/docs">Docs</a></h1>
-              <b> </b>
-              <h1><a href="https://urbit.org/fora/posts/~2016.12.25..06.35.44..a1ec~">Fora post</a>
-              </h1>
+              <br />
+              <p class="label"><code>~master-morzod</code></p>
               <p>
               How to read the Twig docs, a background on the Urbit type system and an overview of Hoon generators.
+              <br />
+              <a href="https://urbit.org/fora/posts/~2016.12.25..06.35.44..a1ec~">Fora post</a>
               </p>
             </li>
             <li>
